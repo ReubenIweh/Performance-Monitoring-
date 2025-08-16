@@ -1,5 +1,5 @@
 # Performance-Monitoring-
-Performance monitoring involves tracking key system metrics to understand resource utilization, identify bottlenecks, and ensure stable and efficient operation. Various command-line tools and utilities are available for this purpose.
+Performance monitoring is the process of continuously observing and analyzing system resource usage to maintain optimal performance, detect issues early, and troubleshoot problems effectively. It helps system administrators,and developers understand how applications and services interact with system resources such as CPU, memory, disk, and network. This is to ensures the system runs efficiently and reliably.
 
 
 ![Install MySQL Screenshot](./image01.png)
@@ -15,6 +15,7 @@ Performance monitoring involves tracking key system metrics to understand resour
 - [Processes](#processes)
 - [Observation Tools Readings](#observation-tools-readings)
 
+**Below are the critical areas to monitor and the tools commonly used to track them.**
 
 ## CPU Usage
 
