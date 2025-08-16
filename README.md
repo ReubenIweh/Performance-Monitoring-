@@ -6,12 +6,14 @@ Performance monitoring involves tracking key system metrics to understand resour
 
 
  📑 **Table of Contents**
+ 
 - [CPU Usage](#cpu-usage)
 - [Memory Usage](#memory-usage)
 - [Disk I/O](#disk-i/o)
 - [Storage Usage](#storage-usage)
 - [Network Activity](#network-activity)
 - [Processes](#processes)
+- [Observation Tools Readings](#observation-tools-readings)
 
 
 ## CPU Usage
@@ -61,6 +63,8 @@ dentify resource-hungry or zombie processes affecting system performance.
 Commands: `top`, `ps aux`, `htop` `pidstat`
 
 Focus Areas: CPU/memory usage by process, process state, run-time
+
+## Observation Tools Readings
 
 
 
