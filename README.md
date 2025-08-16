@@ -15,7 +15,9 @@ Performance monitoring is the process of continuously observing and analyzing sy
 - [Processes](#processes)
 - [Observation Tools Readings](#observation-tools-readings)
 
+
 **Below are the critical areas to monitor and the tools commonly used to track them.**
+
 
 ## CPU Usage
 
