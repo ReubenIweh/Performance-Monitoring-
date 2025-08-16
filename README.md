@@ -66,5 +66,39 @@ Focus Areas: CPU/memory usage by process, process state, run-time
 
 ## Observation Tools Readings
 
+![Install vmstat](./images/vmstat.png)
 
+- r: Number of processes running on CPU, value greater than the CPU count is “saturation”.
+- free: Free memory in kilobytes.
+- si, so: Swap-in and swap-out. If these are non-zero, you’re probably out of memory “saturation” .
+- us, sy, id, wa, st: the breakdown of CPU time, on average across all CPUs. They are user time, system time (kernel), idle, wait I/O, and stolen time (by other guests).
+- In above example, CPU time is almost entirely in user-level, pointing to application level usage .
 
+![Install mpstat](./images/mpstat.png)
+
+- Shows CPU time breakdown per CPU, can be used to check for an imbalance.
+A single hot CPU could mean a single-threaded application for example.
+
+![Install free](./images/free.png)
+
+- total: 1.7Gi: Total physical RAM available.
+
+- used: 207Mi: Memory actively in use (excluding cache and buffers).
+
+- free: 1.0Gi: Completely unused memory.
+
+- shared: 8.0Mi: Memory used by tmpfs and shared between processes.
+
+- buff/cache: 511Mi: Memory used by the kernel for buffers and cache (reclaimable).
+
+- available: 1.4Gi: Estimation of memory available for new applications, accounting for reclaimable cache.
+
+  ![Install free](./images/iostat.png)
+
+- r/s, w/s, rkB/s, wkB/s: These are the delivered reads, writes, read Kbytes, and write Kbytes per second to the device. A performance problem may simply be due to an excessive IO load.
+  
+- await: The average time for the I/O in milliseconds. This is the time that the application suffers, as it includes both time queued and time being serviced.
+  
+- High values can be an indicator of device “saturation” or device problems.
+  
+- avgqu-sz: The average number of requests issued to the device. Values greater than 1 can be evidence of “saturation” (although devices can process in parallel
