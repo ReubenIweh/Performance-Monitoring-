@@ -69,6 +69,8 @@ Focus Areas: CPU/memory usage by process, process state, run-time
 
 ## Observation Tools Readings
 
+**vmstat**
+
 ![Install vmstat](./images/vmstat.png)
 
 - r: Number of processes running on CPU, value greater than the CPU count is “saturation”.
@@ -77,10 +79,14 @@ Focus Areas: CPU/memory usage by process, process state, run-time
 - us, sy, id, wa, st: the breakdown of CPU time, on average across all CPUs. They are user time, system time (kernel), idle, wait I/O, and stolen time (by other guests).
 - In above example, CPU time is almost entirely in user-level, pointing to application level usage .
 
+**mpstat**
+
 ![Install mpstat](./images/mpstat.png)
 
 - Shows CPU time breakdown per CPU, can be used to check for an imbalance.
 A single hot CPU could mean a single-threaded application for example.
+
+**free**
 
 ![Install free](./images/free.png)
 
@@ -95,6 +101,8 @@ A single hot CPU could mean a single-threaded application for example.
 - buff/cache: 511Mi: Memory used by the kernel for buffers and cache (reclaimable).
 
 - available: 1.4Gi: Estimation of memory available for new applications, accounting for reclaimable cache.
+
+**iostat**
 
   ![Install free](./images/iostat.png)
 
