@@ -86,6 +86,36 @@ Focus Areas: CPU/memory usage by process, process state, run-time
 - Shows CPU time breakdown per CPU, can be used to check for an imbalance.
 A single hot CPU could mean a single-threaded application for example.
 
+**htop**
+
+![Install htop](./images/htop.png)
+
+CPU Bars: Show usage per core.
+
+Memory:
+
+Don’t panic if it looks "full"  cached memory is reusable.
+
+Swap: Used when RAM is full high swap usage = potential memory pressure.
+
+Load Avg: 1, 5, and 15-minute system load.
+
+Compare to CPU cores (e.g., load > 4 on a 4-core VM = overloaded).
+
+Tasks: Shows total processes and threads.
+
+Running = actively using CPU.
+
+Per-Process Info:
+
+%CPU, %MEM: Resource usage
+
+PID, USER, COMMAND: Identify the process
+
+S: State (R = running, S = sleeping)
+
+Use F6 to sort, F3 to search, F9 to kill a proces
+
 **free**
 
 ![Install free](./images/free.png)
